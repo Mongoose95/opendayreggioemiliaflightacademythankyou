@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Iscrizione completata</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <style>
     body {
       margin: 0;
@@ -32,7 +30,6 @@
     h1 {
       margin: 0 0 14px;
       font-size: 34px;
-      line-height: 1.15;
       color: #111;
     }
 
@@ -40,50 +37,40 @@
       margin: 8px 0;
       color: #555;
       font-size: 17px;
-      line-height: 1.4;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      font-weight: 600;
+      color: #17324d;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 18px;
-      margin-top: 30px;
+      gap: 28px;
+      margin-top: 20px;
     }
 
     .icon {
-      width: 66px;
-      height: 66px;
-      border-radius: 50%;
-      background: #17324d;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
       text-decoration: none;
-      font-size: 34px;
-      transition: transform 0.2s ease, opacity 0.2s ease;
+      color: #17324d;
+      font-size: 14px;
     }
 
-    .icon:hover {
+    .icon img {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: 0 auto 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .icon img:hover {
       transform: scale(1.08);
-      opacity: 0.9;
     }
 
-    @media (max-width: 420px) {
-      h1 {
-        font-size: 30px;
-      }
-
-      .icon {
-        width: 62px;
-        height: 62px;
-        font-size: 32px;
-      }
-
-      .icons {
-        gap: 14px;
-      }
-    }
   </style>
 </head>
 
@@ -95,27 +82,29 @@
     <p>Grazie per esserti iscritto all’Open Day del 14 giugno.</p>
     <p>Controlla la tua email per i dettagli.</p>
 
+    <p class="subtitle">Nel frattempo puoi trovarci qui:</p>
+
     <div class="icons">
 
       <a class="icon"
-         href="https://wa.me/393311008783?text=Ciao,%20mi%20sono%20iscritto%20all%27Open%20Day"
-         target="_blank"
-         aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-
-      <a class="icon"
          href="https://www.instagram.com/reggioemiliaflightacademy"
-         target="_blank"
-         aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
+         target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+        Instagram
       </a>
 
       <a class="icon"
          href="https://www.linkedin.com/company/reggio-emilia-flight-academy/"
-         target="_blank"
-         aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
+         target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
+        LinkedIn
+      </a>
+
+      <a class="icon"
+         href="https://wa.me/393311008783?text=Ciao,%20mi%20sono%20iscritto%20all%27Open%20Day"
+         target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg">
+        WhatsApp
       </a>
 
     </div>
