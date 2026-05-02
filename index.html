@@ -1,114 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Iscrizione completata</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iscrizione completata</title>
 
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #eaf2f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-    }
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eaf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
 
-    .container {
-      background: white;
-      padding: 42px 28px;
-      border-radius: 24px;
-      text-align: center;
-      max-width: 430px;
-      width: 100%;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.10);
-    }
+.container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
 
-    h1 {
-      margin: 0 0 14px;
-      font-size: 34px;
-      color: #111;
-    }
+h1 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  color: #111;
+}
 
-    p {
-      margin: 8px 0;
-      color: #555;
-      font-size: 17px;
-    }
+p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 16px;
+}
 
-    .subtitle {
-      margin-top: 20px;
-      font-weight: 600;
-      color: #17324d;
-    }
+.subtitle {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #17324d;
+}
 
-    .icons {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      margin-top: 20px;
-    }
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
 
-    .icon {
-      text-align: center;
-      text-decoration: none;
-      color: #17324d;
-      font-size: 14px;
-    }
+.icon {
+  text-align: center;
+  text-decoration: none;
+  color: #17324d;
+  font-size: 13px;
+}
 
-    .icon img {
-      width: 60px;
-      height: 60px;
-      display: block;
-      margin: 0 auto 8px;
-      transition: transform 0.2s ease;
-    }
+.icon img {
+  width: 55px;
+  height: 55px;
+  display: block;
+  margin: 0 auto 6px;
+  transition: transform 0.2s ease;
+}
 
-    .icon img:hover {
-      transform: scale(1.08);
-    }
+.icon img:hover {
+  transform: scale(1.08);
+}
 
-  </style>
+.phone {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #333;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Iscrizione completata ✅</h1>
+<div class="container">
 
-    <p>Grazie per esserti iscritto all’Open Day del 14 giugno.</p>
-    <p>Controlla la tua email per i dettagli.</p>
+  <h1>Iscrizione completata ✅</h1>
 
-    <p class="subtitle">Nel frattempo puoi trovarci qui:</p>
+  <p>Grazie per esserti iscritto all’Open Day del 14 giugno.</p>
+  <p>Controlla la tua email per tutti i dettagli.</p>
 
-    <div class="icons">
+  <p class="subtitle">Nel frattempo puoi trovarci qui:</p>
 
-      <a class="icon"
-         href="https://www.instagram.com/reggioemiliaflightacademy"
-         target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
-        Instagram
-      </a>
+  <div class="icons">
 
-      <a class="icon"
-         href="https://www.linkedin.com/company/reggio-emilia-flight-academy/"
-         target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
-        LinkedIn
-      </a>
+    <!-- Instagram -->
+    <a class="icon" href="https://www.instagram.com/reggioemiliaflightacademy" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+      Instagram
+    </a>
 
-      <a class="icon"
-         href="https://wa.me/393311008783?text=Ciao,%20mi%20sono%20iscritto%20all%27Open%20Day"
-         target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg">
-        WhatsApp
-      </a>
+    <!-- LinkedIn -->
+    <a class="icon" href="https://www.linkedin.com/company/reggio-emilia-flight-academy/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
+      LinkedIn
+    </a>
 
-    </div>
+    <!-- WhatsApp -->
+    <a class="icon" href="https://wa.me/393311008783" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg">
+      WhatsApp
+    </a>
+
+    <!-- Telefono -->
+    <a class="icon" href="tel:+390522511650">
+      <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png">
+      Telefono
+    </a>
+
   </div>
+
+  <div class="phone">
+    Oppure chiamaci: <strong>0522 511650</strong>
+  </div>
+
+</div>
 
 </body>
 </html>
