@@ -5,99 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Iscrizione completata</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
       background: #eaf2f8;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      padding: 24px;
     }
 
     .container {
       background: white;
-      padding: 40px 25px;
-      border-radius: 20px;
+      padding: 42px 28px;
+      border-radius: 24px;
       text-align: center;
-      max-width: 400px;
+      max-width: 430px;
       width: 100%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.10);
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin: 0 0 14px;
+      font-size: 34px;
+      line-height: 1.15;
+      color: #111;
     }
 
     p {
+      margin: 8px 0;
       color: #555;
-      font-size: 16px;
+      font-size: 17px;
+      line-height: 1.4;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 18px;
       margin-top: 30px;
     }
 
     .icon {
-      width: 65px;
-      height: 65px;
+      width: 66px;
+      height: 66px;
       border-radius: 50%;
       background: #17324d;
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: transform 0.2s ease;
+      text-decoration: none;
+      font-size: 34px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .icon:hover {
-      transform: scale(1.1);
+      transform: scale(1.08);
+      opacity: 0.9;
     }
 
-    .icon svg {
-      width: 30px;
-      height: 30px;
-      fill: white;
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .icon {
+        width: 62px;
+        height: 62px;
+        font-size: 32px;
+      }
+
+      .icons {
+        gap: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h1>Iscrizione completata ✅</h1>
-  <p>Grazie per esserti iscritto all’Open Day del 14 giugno.</p>
-  <p>Controlla la tua email per i dettagli.</p>
+  <div class="container">
+    <h1>Iscrizione completata ✅</h1>
 
-  <div class="icons">
+    <p>Grazie per esserti iscritto all’Open Day del 14 giugno.</p>
+    <p>Controlla la tua email per i dettagli.</p>
 
-    <!-- WhatsApp -->
-    <a class="icon" href="https://wa.me/393311008783?text=Ciao,%20mi%20sono%20iscritto%20all%27Open%20Day" target="_blank">
-      <svg viewBox="0 0 24 24">
-        <path d="M20.52 3.48A11.83 11.83 0 0 0 12.09 0C5.47 0 .08 5.39.08 12.02c0 2.12.55 4.19 1.6 6.01L0 24l6.11-1.6a12.03 12.03 0 0 0 5.98 1.52h.01c6.62 0 12.01-5.39 12.01-12.02 0-3.21-1.25-6.23-3.59-8.42z"/>
-      </svg>
-    </a>
+    <div class="icons">
 
-    <!-- Instagram -->
-    <a class="icon" href="https://www.instagram.com/reggioemiliaflightacademy" target="_blank">
-      <svg viewBox="0 0 24 24">
-        <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
-      </svg>
-    </a>
+      <a class="icon"
+         href="https://wa.me/393311008783?text=Ciao,%20mi%20sono%20iscritto%20all%27Open%20Day"
+         target="_blank"
+         aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
 
-    <!-- LinkedIn -->
-    <a class="icon" href="https://www.linkedin.com/company/reggio-emilia-flight-academy/" target="_blank">
-      <svg viewBox="0 0 24 24">
-        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.3 8h4.4v15H.3V8zm7.2 0h4.22v2.05h.06c.59-1.12 2.03-2.3 4.18-2.3 4.47 0 5.29 2.94 5.29 6.76V23h-4.4v-7.53c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.97V23h-4.4V8z"/>
-      </svg>
-    </a>
+      <a class="icon"
+         href="https://www.instagram.com/reggioemiliaflightacademy"
+         target="_blank"
+         aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
 
+      <a class="icon"
+         href="https://www.linkedin.com/company/reggio-emilia-flight-academy/"
+         target="_blank"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+    </div>
   </div>
-
-</div>
 
 </body>
 </html>
