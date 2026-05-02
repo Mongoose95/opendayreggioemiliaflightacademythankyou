@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partecipanti Open Day</title>
+
+<style>
+  body {
+    margin: 0;
+    background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .label {
+    font-size: 42px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  #counter {
+    font-size: 180px;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
+  }
+
+  .small {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #777;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="label">Partecipanti iscritti</div>
+  <div id="counter">0</div>
+  <div class="small">Open Day Reggio Emilia Flight Academy</div>
+</div>
+
+<script>
+const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRlTTicnBP2LqPUiRFo5fE_9sLKPWBquJHk4cpGbKiw220USKv3fLWGt7RatAFR-4taq24p45TgZD13/pub?gid=0&single=true&output=csv";
+
+async function updateCounter() {
+  try {
+    const response = await fetch(url + "&cachebust=" + Date.now());
+    const text = await response.text();
+    const rows = text.trim().split("\n");
+
+    let totale = 0;
+
+    for (let i = 1; i < rows.length; i++) {
+      const cols = rows[i].split(",");
+      const partecipanti = parseInt(cols[3], 10);
+
+      if (!isNaN(partecipanti)) {
+        totale += partecipanti;
+      }
+    }
+
+    document.getElementById("counter").innerText = totale;
+  } catch (error) {
+    document.getElementById("counter").innerText = "—";
+  }
+}
+
+updateCounter();
+setInterval(updateCounter, 5000);
+</script>
+
+</body>
+</html>
